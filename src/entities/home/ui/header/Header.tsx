@@ -100,7 +100,7 @@ export const Header = () => {
 
 
                         <div className={cls.socials}>
-                            <h1>Menu</h1>
+                            <h1>My Socials</h1>
 
 
                             <div className={cls.socials__wrapper}>

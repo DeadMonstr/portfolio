@@ -60,13 +60,11 @@ const Home = () => {
             root
             options={{
                 autoRaf: false,
-                // lerp: 0.0010,
                 lerp: 1,
                 duration: 1.8,
                 syncTouch: true,
                 touchMultiplier: 2,
             }}
-
             ref={lenisRef}
         >
             <div  className={cls.home}>
@@ -77,10 +75,7 @@ const Home = () => {
                 <Skills/>
                 <Projects/>
                 <Social/>
-
                 <ScrollProgress/>
-            {/**/}
-
             </div>
         </ReactLenis>
 
