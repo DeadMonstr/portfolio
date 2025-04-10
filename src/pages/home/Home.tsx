@@ -73,8 +73,8 @@ const Home = () => {
                 <Main/>
                 <About/>
                 <Skills/>
-                <Projects/>
                 <Social/>
+                <Projects/>
                 <ScrollProgress/>
             </div>
         </ReactLenis>
