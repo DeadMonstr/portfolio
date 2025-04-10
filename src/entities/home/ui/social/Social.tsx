@@ -57,6 +57,8 @@ const Social = () => {
             // ease: "power4.out",
         });
     },{scope: container})
+
+
     return (
         <div className={cls.socials} ref={container}>
 
@@ -65,7 +67,7 @@ const Social = () => {
                     <h1 ref={text1} className={cls.title}>My Socials</h1>
                     <div className={cls.wrapper}>
                         {
-                            socialLinks.map((item,index) => {
+                            socialLinks.length && socialLinks.map((item,index) => {
                                 return (
                                     <a
                                         key={index}
