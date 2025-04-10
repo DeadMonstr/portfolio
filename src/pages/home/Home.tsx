@@ -10,7 +10,6 @@ import ReactLenis, {useLenis} from "lenis/dist/lenis-react";
 
 import gsap from "gsap"
 import ScrollProgress from "shared/ui/ScrollProgress/ScrollProgress";
-import {clearTimeout} from "timers";
 
 
 
@@ -73,8 +72,8 @@ const Home = () => {
                 <Main/>
                 <About/>
                 <Skills/>
-                <Social/>
                 <Projects/>
+                <Social/>
                 <ScrollProgress/>
             </div>
         </ReactLenis>

@@ -75,8 +75,7 @@ const Social = () => {
                                         href={item.link}
                                         className={cls.item}
                                     >
-
-                                        <item.icon/>
+                                        <img src={item.icon} alt="icon"/>
                                     </a>
                                 )
                             })
