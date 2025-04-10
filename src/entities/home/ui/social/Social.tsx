@@ -40,23 +40,23 @@ const Social = () => {
     },[])
 
 
-    useGSAP(() => {
-        let elem1 = gsap.timeline({
-            scrollTrigger: {
-                trigger: container.current,
-                start: "top 90%",
-                end: "bottom-=200 100%",
-                scrub: 0.5,
-                // toggleActions: "resume pause resume pause",
-            }
-        })
-        elem1.from(textRefs.current, {
-            opacity: 0,
-            y: 40,
-            stagger: 0.4,
-            // ease: "power4.out",
-        });
-    },{scope: container})
+    // useGSAP(() => {
+    //     let elem1 = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: container.current,
+    //             start: "top 90%",
+    //             end: "bottom-=200 100%",
+    //             scrub: 0.5,
+    //             // toggleActions: "resume pause resume pause",
+    //         }
+    //     })
+    //     elem1.from(textRefs.current, {
+    //         opacity: 0,
+    //         y: 40,
+    //         stagger: 0.4,
+    //         // ease: "power4.out",
+    //     });
+    // },{scope: container})
 
 
     return (
