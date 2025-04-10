@@ -1,0 +1,158 @@
+.header
+  width: 100%
+  height: 100px
+  position: relative
+  //background-color: #64CCC5
+
+
+
+.hamburger
+  width: 40px
+  height: 27px
+  gap: 1rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  position: fixed
+
+  top: 5rem
+  right: 5rem
+  transform: translateY(-50%)
+  cursor: pointer
+  z-index: 1001
+
+  .item
+    width: 100%
+    height: 3px
+    background-color: #fff
+    transition: all 0.3s ease
+
+
+  &.active
+    .item
+      &:nth-child(1)
+        transform: rotate(45deg) translate(5px, 5px)
+      &:nth-child(2)
+        transform: rotate(-45deg) translate(5px, -5px)
+
+.menu
+  width: 100%
+  height: 100vh
+  top: 0
+  background-color: rgba(0, 0, 0, 0.49)
+  backdrop-filter: blur(10px)
+  visibility: hidden
+  position: fixed
+  z-index: 1000
+  transition: all 0.5s
+  opacity: 0
+  &__wrapper
+    top: -100%
+    width: 100%
+    height: 70%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    background-color: #3B3B3B
+    transition: all 0.5s linear
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    padding: 7.7rem
+    @media only screen and (max-width: 1024px)
+      height: 75%
+    @media only screen and (max-width: 768px)
+
+      padding: 7rem 4rem
+    @media only screen and (max-width: 430px)
+      height: 100%
+    .info
+      width: 100%
+      display: flex
+      flex-direction: column
+      gap: 2rem
+      h1
+        font-family: "Open Sans", sans-serif
+        color: white
+        font-weight: 500
+        font-size: 30px
+        @media only screen and (max-width: 1024px)
+          font-size: 28px
+        @media only screen and (max-width: 768px)
+          font-size: 26px
+        @media only screen and (max-width: 430px)
+          font-size: 24px
+      ul
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        gap: 4.5rem
+        font-family: "Open Sans", sans-serif
+        color: white
+        font-weight: 500
+        font-size: 22px
+        list-style: none
+        @media only screen and (max-width: 1024px)
+          font-size: 20px
+        @media only screen and (max-width: 768px)
+          font-size: 18px
+          gap: 2rem
+
+    .socials
+      margin-top: 8rem
+      display: flex
+      gap: 2rem
+      flex-direction: column
+
+      h1
+        font-family: "Open Sans", sans-serif
+        color: white
+        font-weight: 500
+        font-size: 30px
+        @media only screen and (max-width: 1024px)
+          font-size: 28px
+        @media only screen and (max-width: 768px)
+          font-size: 26px
+        @media only screen and (max-width: 430px)
+          font-size: 24px
+      &__wrapper
+        display: flex
+        align-items: center
+        gap: 1.8rem
+        .item
+          width: 5rem
+          height: 5rem
+          @media only screen and (max-width: 1024px)
+            width: 4rem
+            height: 4rem
+          svg
+            width: 100%
+            height: 100%
+
+  &.active
+    opacity: 1
+    visibility: visible
+    .menu__wrapper
+      top: 0
+      opacity: 1
+      visibility: visible
+
+
+
+.gmail
+  position: fixed
+  top: 50%
+  left: 1rem
+  transform: translateY(-50%)
+  writing-mode: vertical-rl
+  text-orientation: mixed
+  font-size: 20px
+  font-family: "Open Sans",sans-serif
+  color: white
+  @media only screen and (max-width: 1024px)
+    font-size: 19px
+  @media only screen and (max-width: 768px)
+    font-size: 18px
+  @media only screen and (max-width: 430px)
+    font-size: 14px

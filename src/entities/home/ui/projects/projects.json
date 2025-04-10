@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Gennis (Platform business)",
+      "technologies": [
+        "React","Redux","Framer Motion","SASS"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Gennis Classroom (Platform students)",
+      "technologies": [
+        "React","Redux","Framer Motion","SASS","GSAP"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Turon (Platform business)",
+      "technologies": [
+        "React","Redux","FSD","SASS"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Medicine (Platform business) - not producted !",
+      "technologies": [
+        "React","Redux","FSD","Typescript","SASS"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Ntt (Platform business)",
+      "technologies": [
+        "React","Redux","SASS","FSD"
+      ]
+    }
+  ]
+}

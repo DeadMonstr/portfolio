@@ -1,0 +1,33 @@
+@import "app/styles/abstracts/variables"
+
+
+.socials
+  margin-top: 15rem
+  padding-bottom: 10rem
+  .title
+    font-family: "Prompt", sans-serif
+    font-weight: 800
+    font-size: 45px
+    color: $color-third
+    @media only screen and (max-width: 1024px)
+      font-size: 42px
+    @media only screen and (max-width: 768px)
+      font-size: 40px
+    @media only screen and (max-width: 430px)
+      font-size: 38px
+  .wrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    gap: 3rem
+    margin-top: 5rem
+    row-gap: 4rem
+    .item
+      width: 5rem
+      height: 5rem
+      svg
+        width: 100%
+        height: 100%
+      @media only screen and (max-width: 1024px)
+        width: 4rem
+        height: 4rem

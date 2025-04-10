@@ -1,0 +1,78 @@
+@import "app/styles/abstracts/variables"
+
+
+
+.projects
+  margin-top: 20rem
+  .title
+    font-family: "Prompt", sans-serif
+    font-weight: 800
+    font-size: 45px
+    color: $color-third
+    margin-bottom: 5rem
+    @media only screen and (max-width: 1024px)
+      font-size: 42px
+    @media only screen and (max-width: 768px)
+      font-size: 40px
+    @media only screen and (max-width: 430px)
+      font-size: 38px
+  .wrapper
+    display: flex
+    flex-direction: column
+    margin-top: 5rem
+    .item
+      width: 100%
+      display: flex
+      align-items: center
+      gap: 2rem
+      margin-bottom: 2.5rem
+      border-bottom: 1px solid $color-secondary
+      padding-bottom: 1rem
+      &:hover
+        cursor: pointer
+        .info
+          h1
+            color: $color-four
+          p
+            color: white
+        .arrow
+
+          path
+            stroke:  $color-four
+      .info
+        flex-grow: 1
+        h1
+          font-family: "Open Sans", sans-serif
+          font-weight: 800
+          font-size: 36px
+          color: rgba(255, 255, 255, 0.6)
+          transition: all .5s
+          @media only screen and (max-width: 1024px)
+            font-size: 34px
+          @media only screen and (max-width: 768px)
+            font-size: 32px
+          @media only screen and (max-width: 430px)
+            font-size: 28px
+        p
+          display: flex
+          align-items: center
+          gap: 1rem
+          color: rgba(255, 255, 255, 0.6)
+          font-family: "Open Sans", sans-serif
+          font-weight: 400
+          font-size: 20px
+          margin-top: 1rem
+          transition: all .5s
+          @media only screen and (max-width: 1024px)
+            font-size: 18px
+          @media only screen and (max-width: 768px)
+            font-size: 17px
+          @media only screen and (max-width: 430px)
+            font-size: 16px
+
+      .arrow
+        width: 3rem
+        object-fit: cover
+        path
+          stroke:  rgba(255, 255, 255, 0.6)
+          transition: all .5s

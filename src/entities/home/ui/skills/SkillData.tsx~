@@ -1,0 +1,59 @@
+import javascript from "shared/assets/icon/javascript-original.png"
+import typescript from "shared/assets/icon/typescript-original.png"
+import react from "shared/assets/icon/react-original.png"
+import html from "shared/assets/icon/html5-original.png"
+import css from "shared/assets/icon/css3-original.png"
+import github from "shared/assets/icon/github-mark-white 1.png"
+import sass from "shared/assets/icon/icons8-sass-48 1.png"
+import redux from "shared/assets/icon/redux-logo 1.png"
+import gsap from "shared/assets/icon/gsap-white 1.png"
+import git from "shared/assets/icon/icons8-git-480 1.png"
+import fra from "shared/assets/icon/Frame Motion 1.png"
+
+
+export default  [
+    {
+        "title": "Javascript",
+        "img": javascript
+    },
+    {
+        "title": "Typescript",
+        "img": typescript
+    },
+    {
+        "title": "React",
+        "img": react
+    },
+    {
+        "title": "HTML",
+        "img": html
+    },
+    {
+        "title": "CSS",
+        "img":css
+    },
+    {
+        "title": "Github",
+        "img": github
+    },
+    {
+        "title": "SASS",
+        "img": sass
+    },
+    {
+        "title": "Redux",
+        "img": redux
+    },
+    {
+        "title": "GSAP",
+        "img": gsap
+    },
+    {
+        "title": "Git",
+        "img": git
+    },
+    {
+        "title": "Frame Motion",
+        "img": fra
+    }
+];
