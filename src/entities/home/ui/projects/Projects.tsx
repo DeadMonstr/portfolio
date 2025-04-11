@@ -98,7 +98,7 @@ export const Projects = () => {
                                                         return (
                                                             <React.Fragment key={index}>
                                                                 <span>{elem}</span>
-                                                                {index === item.technologies.length - 1 ? "/" : ""}
+                                                                {index === item.technologies.length - 1 ? "" : "/"}
                                                             </React.Fragment>
                                                         )
                                                     })

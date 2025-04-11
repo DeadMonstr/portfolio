@@ -50,27 +50,27 @@ const Preloader = () => {
 
 
         tl.to("#arrow2",{
-            x: 1000,
+            x: 2000,
             duration: 1,
             // repeat: 2
         })
 
 
         tl.to("#arrow1",{
-            x: -1000,
+            x: -2000,
             duration: 1,
             // repeat: 2
         },'<')
 
         tl.to("#leftLoader",{
             x: "-100%",
-            duration: 2,
+            duration:  1.5,
             // repeat: 2
         },'<')
 
         tl.to("#rightLoader",{
             x: "100%",
-            duration: 2,
+            duration: 1.5,
             // repeat: 2
         },'<')
 
