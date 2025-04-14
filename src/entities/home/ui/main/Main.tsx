@@ -15,7 +15,7 @@ export const Main = () => {
     const text2 = React.useRef<HTMLDivElement>(null)
     const text3 = React.useRef<HTMLDivElement>(null)
     const down = React.useRef<HTMLDivElement>(null)
-
+    const svg = React.useRef<(SVGPathElement | null)[]>([])
 
 
     useGSAP(() => {
@@ -32,7 +32,8 @@ export const Main = () => {
             // scale: 0.9,
             y: -60,
             opacity: 0.4,
-            duration: 2
+            duration: 2,
+
         })
 
         gsap.to(text2.current, {
@@ -65,15 +66,42 @@ export const Main = () => {
         })
 
 
-        gsap.to(down.current, {
-            stagger: 0.1,
+
+
+
+
+
+    }, [])
+
+    useGSAP(() => {
+
+        const tl = gsap.timeline({
+            repeat: -1,
+            scrub: 1
+        })
+
+        tl.fromTo(svg.current, {
+            strokeDashoffset: "591.8250732421875px",
+            fill: "transparent",
+            repeat: -1,
+        },{
+            strokeDashoffset: 0,
+            fill: "rgb(218, 255, 251)",
+            stagger: 0.3,
+            duration: 4
+        })
+
+        tl.to(down.current, {
+            // stagger: 0.1,
             // scale: 0.9,
             y: 200,
-            opacity: 0.4,
+            opacity: 0,
             duration: 6,
             // delay: 6,
-            repeat: -1
+            // repeat: -1
         })
+
+
     },[])
 
 
@@ -85,7 +113,8 @@ export const Main = () => {
                         <h1>FRONTEND</h1>
                         <h1>DEVELOPER</h1>
                     </div>
-                    <p ref={text2} className={cls.desc}>Hi there! I’m <span>Ulug’bek</span>. A creative Frontend Developer with 4+ years of experience in building
+                    <p ref={text2} className={cls.desc}>Hi there! I’m <span>Ulug’bek</span>. A creative Frontend
+                        Developer with 4+ years of experience in building
                         high-performance, scalable, and responsive web solutions.</p>
                     <div ref={text3} className={cls.exp}>
                         <div className={cls.item}>
@@ -100,19 +129,27 @@ export const Main = () => {
                 </Col>
                 <Col span={6} tablet={4} mobile={12}>
                     <div ref={down} className={cls.scrollDown}>
-                        <svg  viewBox="0 0 227 115" fill="none"
+                        <svg viewBox="0 0 227 115" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector 5"
-                                  d="M4 3.05012H5.04535H34.7063L113.5 79L192.873 3.05012L223 2L113.5 112L4 3.05012Z"
-                                  fill="#DAFFFB" fillOpacity="0.6" stroke="#DAFFFB" strokeOpacity="0.6"
-                                  strokeWidth="3" className={cls.svgElem1}></path>
+                            <path
+                                ref={(el) => {
+                                    svg.current[0] = el
+                                }}
+                                id="Vector 5"
+                                d="M4 3.05012H5.04535H34.7063L113.5 79L192.873 3.05012L223 2L113.5 112L4 3.05012Z"
+                                fill="#DAFFFB" fillOpacity="0.6" stroke="#DAFFFB" strokeOpacity="0.6"
+                                strokeWidth="3" className={cls.svgElem1}></path>
                         </svg>
-                        <svg  viewBox="0 0 227 115" fill="none"
+                        <svg viewBox="0 0 227 115" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector 5"
-                                  d="M4 3.05012H5.04535H34.7063L113.5 79L192.873 3.05012L223 2L113.5 112L4 3.05012Z"
-                                  fill="#DAFFFB" fillOpacity="0.6" stroke="#DAFFFB" strokeOpacity="0.6"
-                                  strokeWidth="3" className={cls.svgElem1}></path>
+                            <path
+                                id="Vector 5"
+                                ref={(el) => {
+                                    svg.current[1] = el
+                                }}
+                                d="M4 3.05012H5.04535H34.7063L113.5 79L192.873 3.05012L223 2L113.5 112L4 3.05012Z"
+                                fill="#DAFFFB" fillOpacity="0.6" stroke="#DAFFFB" strokeOpacity="0.6"
+                                strokeWidth="3" className={cls.svgElem1}></path>
                         </svg>
                     </div>
                 </Col>

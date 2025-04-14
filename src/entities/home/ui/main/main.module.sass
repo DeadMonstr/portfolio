@@ -103,10 +103,10 @@
       stroke-dashoffset: 591.8250732421875px
       stroke-dasharray: 591.8250732421875px
       fill: transparent
-      -webkit-transition: stroke-dashoffset 10s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s
-      transition: stroke-dashoffset 10s cubic-bezier(0.47, 0, 0.745, 0.715) 0s , fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s
-      -webkit-animation: animate 6s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
-      animation: animate 6s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+      //-webkit-transition: stroke-dashoffset 10s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s
+      //transition: stroke-dashoffset 10s cubic-bezier(0.47, 0, 0.745, 0.715) 0s , fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s
+      //-webkit-animation: animate 6s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+      //animation: animate 6s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
       &:last-child
         margin-top: -6rem
     @media only screen and (max-width: 768px)
@@ -115,21 +115,21 @@
         width: 30rem
         &:last-child
           width: 25rem
-    //svg.active .svg-elem-1
-    //  stroke-dashoffset: 0
-    //  fill: rgb(218, 255, 251)
+    svg.active .svg-elem-1
+      stroke-dashoffset: 0
+      fill: rgb(218, 255, 251)
 
 
 
 
 
-
-@keyframes animate
-
-  from
-    stroke-dashoffset: 591.8250732421875px
-    fill: transparent
-  to
-    stroke-dashoffset: 0
-    fill: rgb(218, 255, 251)
+//
+//@keyframes animate
+//
+//  from
+//    stroke-dashoffset: 591.8250732421875px
+//    fill: transparent
+//  to
+//    stroke-dashoffset: 0
+//    fill: rgb(218, 255, 251)
 
