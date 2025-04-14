@@ -75,33 +75,46 @@ export const Main = () => {
 
     useGSAP(() => {
 
-        const tl = gsap.timeline({
-            repeat: -1,
-            scrub: 1
+
+        let mm = gsap.matchMedia();
+
+
+        mm.add( {
+            small: '(max-width: 767px)',
+            large: '(min-width: 768px)',
+        }, (ctx) => {
+            const { small }: gsap.matchMedia.Conditions | undefined = ctx.conditions;
+
+            const tl = gsap.timeline({
+                repeat: -1,
+                scrub: 1
+            })
+
+            tl.fromTo(svg.current, {
+                strokeDashoffset: "591.8250732421875px",
+                fill: "transparent",
+                repeat: -1,
+                opacity: small ? 0.2 :  0.5
+            },{
+                strokeDashoffset: 0,
+                fill: "rgb(218, 255, 251)",
+                stagger: 0.3,
+                duration: 4,
+                opacity: small ? 0.2 :  0.5
+            })
+
+            tl.to(down.current, {
+                // stagger: 0.1,
+                // scale: 0.9,
+                y: 200,
+                opacity: 0,
+                duration: 6,
+                // delay: 6,
+                // repeat: -1
+            })
         })
 
-        tl.fromTo(svg.current, {
-            strokeDashoffset: "591.8250732421875px",
-            fill: "transparent",
-            repeat: -1,
-            opacity: 0.2
-        },{
-            strokeDashoffset: 0,
-            fill: "rgb(218, 255, 251)",
-            stagger: 0.3,
-            duration: 4,
-            opacity: 0.2
-        })
 
-        tl.to(down.current, {
-            // stagger: 0.1,
-            // scale: 0.9,
-            y: 200,
-            opacity: 0,
-            duration: 6,
-            // delay: 6,
-            // repeat: -1
-        })
 
 
     },[])
