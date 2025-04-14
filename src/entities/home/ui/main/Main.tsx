@@ -84,13 +84,13 @@ export const Main = () => {
             strokeDashoffset: "591.8250732421875px",
             fill: "transparent",
             repeat: -1,
-            opacity: 0.6
+            opacity: 0.2
         },{
             strokeDashoffset: 0,
             fill: "rgb(218, 255, 251)",
             stagger: 0.3,
             duration: 4,
-            opacity: 0.6
+            opacity: 0.2
         })
 
         tl.to(down.current, {
