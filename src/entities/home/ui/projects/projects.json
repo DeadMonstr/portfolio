@@ -5,13 +5,44 @@
       "title": "Gennis (Platform business)",
       "technologies": [
         "React","Redux","Framer Motion","SASS"
+      ],
+      "year": "2020",
+      "desc": "The Gennis platform is designed to manage educational centers, with 70% of tasks automated. For example: student registration and grouping, managing their payments online, managing teachers by assigning them tasks and handling their salaries online, managing staff tasks and their salaries online, and other similar operations.",
+      "link": "https://gennis.uz/",
+      "myRole": {
+        "title": "As the frontend developer, I developed the following features and managed other junior developers:",
+        "options": [
+          "Main frontend structure and file system of the platform.",
+          "UX/UI for staff and other users.",
+          "I managed the development of the core features of the platform.",
+          "optimize  functions for performance"
+        ]
+      },
+      "images": [
+          "gennis1.png","gennis2.png","gennis3.png"
       ]
     },
     {
       "id": 2,
       "title": "Gennis Classroom (Platform students)",
       "technologies": [
-        "React","Redux","Framer Motion","SASS","GSAP"
+        "React","Redux","Framer Motion","SASS","GSAP","Lexical"
+      ],
+      "year": "2022",
+      "desc": "Gennis Classroom is an online learning platform developed by the Gennis Education Center. It offers interactive lessons and exercises for various subjects, including English. The platform is designed to support students in learning remotely through structured courses, practice activities, and educational resources tailored to enhance their skills.",
+      "link": "https://classroom.gennis.uz/",
+      "myRole": {
+        "title": "As the frontend developer, I developed the following features and managed other junior developers:",
+        "options": [
+          "Main frontend structure and file system of the platform.",
+          "Create main features of the platform like create lessons, exercises.",
+          "UX/UI for staff and other users.",
+          "I managed the development of the core features of the platform.",
+          "optimize  functions for performance"
+        ]
+      },
+      "images": [
+        "classroom1.png","classroom2.png","classroom3.png"
       ]
     },
     {
@@ -19,6 +50,21 @@
       "title": "Turon (Platform business)",
       "technologies": [
         "React","Redux","FSD","SASS"
+      ],
+      "year": "2023",
+      "desc": "Turon Platform is a system developed to automate 60–70% of the operations at Turon School. It includes features such as student registration, online payments, and other specialized functionalities designed to streamline administrative tasks and improve overall efficiency.",
+      "link": "https://turonedu.uz",
+      "myRole": {
+        "title": "As the frontend developer, I developed the following features and managed other junior developers:",
+        "options": [
+          "Main frontend structure and file system of the platform.",
+          "Create main features of the platform like create lessons, exercises.",
+          "I managed the development of the core features of the platform.",
+          "optimize  functions for performance"
+        ]
+      },
+      "images": [
+
       ]
     },
     {
@@ -26,13 +72,43 @@
       "title": "Medicine (Platform business) - not producted !",
       "technologies": [
         "React","Redux","FSD","Typescript","SASS"
+      ],
+      "year": "2025",
+      "desc": "Medicine Platform is designed to automate various hospital operations. It includes features such as patient registration, doctor appointments, doctor scheduling, medical test management, patient billing, laboratory analysis results, and many other functionalities to streamline and digitize healthcare workflows.\n\n",
+      "link": "",
+      "myRole": {
+        "title": "As the frontend developer, I developed the following features and managed other junior developers:",
+        "options": [
+          "Main frontend structure and file system of the platform.",
+          "Create main features of the platform like create lessons, exercises.",
+          "I managed the development of the core features of the platform.",
+          "optimize functions for performance"
+        ]
+      },
+      "images": [
+        "medicine1.png","medicine2.png","medicine3.png"
       ]
     },
     {
       "id": 5,
-      "title": "Ntt (Platform business)",
+      "title": "NTT (Nodavlat ta'lim tashkilotlari - platform business)",
       "technologies": [
         "React","Redux","SASS","FSD"
+      ],
+      "year": "2025",
+      "desc": "NTT (Nodavlat ta'lim tashkilotlari) – a platform developed for university applicants. It allows users to access information about educational institutions and apply for admission directly through the system.\nThe NTT platform is divided into two main types: Student and Admin platforms.",
+      "link": "https://xususiytalim.uz/",
+      "myRole": {
+        "title": "As the frontend developer, I developed the following features and managed other junior developers:",
+        "options": [
+          "Main frontend structure and file system of the platform.",
+          "Create main features of the platform like create lessons, exercises.",
+          "I managed the development of the core features of the platform.",
+          "optimize  functions for performance"
+        ]
+      },
+      "images": [
+        "ntt.png"
       ]
     }
   ]

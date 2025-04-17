@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import cls from "./skills.module.sass"
 import skillsData from "./SkillData"
 import {Col, Container} from "shared/ui/Grid";
@@ -7,6 +7,7 @@ import {Col, Container} from "shared/ui/Grid";
 import gsap from "gsap"
 import {useGSAP} from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger"
+import Modal from "shared/ui/Modal/Modal";
 
 gsap.registerPlugin(useGSAP)
 gsap.registerPlugin(ScrollTrigger)
@@ -23,6 +24,8 @@ export const Skills = () => {
     const textRefs = useRef<(HTMLDivElement | null)[]>([]);
     const text1 = useRef<HTMLDivElement>(null);
     const container = useRef<HTMLDivElement>(null)
+
+    const [active,setActive] = useState<boolean>(false)
 
 
     useGSAP(() => {
@@ -72,6 +75,7 @@ export const Skills = () => {
 
     return (
         <div className={cls.skills} id={"mySkills"} ref={container}>
+
             <Container>
                 <Col span={12}>
                     <h1 ref={text1} className={cls.title}>My Skills</h1>

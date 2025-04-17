@@ -59,6 +59,7 @@ const Home = () => {
             root
             options={{
                 autoRaf: false,
+                prevent: (node) => node.id === "modal",
                 lerp: 1,
                 duration: 1.8,
                 syncTouch: true,

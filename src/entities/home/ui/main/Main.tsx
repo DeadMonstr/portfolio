@@ -94,7 +94,7 @@ export const Main = () => {
                 strokeDashoffset: "591.8250732421875px",
                 fill: "transparent",
                 repeat: -1,
-                opacity: small ? 0.2 :  0.5
+                opacity: small ? 0.2 : 0.5
             },{
                 strokeDashoffset: 0,
                 fill: "rgb(218, 255, 251)",

@@ -52,10 +52,11 @@
           @media only screen and (max-width: 768px)
             font-size: 32px
           @media only screen and (max-width: 430px)
-            font-size: 28px
+            font-size: 26px
         p
           display: flex
           align-items: center
+          flex-wrap: wrap
           gap: 1rem
           color: rgba(255, 255, 255, 0.6)
           font-family: "Open Sans", sans-serif
@@ -72,7 +73,105 @@
 
       .arrow
         width: 3rem
-        object-fit: cover
+        height: 3rem
+        //object-fit: cover
+        flex-shrink: 0
         path
           stroke:  rgba(255, 255, 255, 0.6)
           transition: all .5s
+
+
+
+.projectsInfo
+  width: 100%
+  padding: 5rem
+  display: flex
+  flex-direction: column
+  .subtitle
+    font-family: "Open Sans", sans-serif
+    font-weight: 800
+    font-size: 30px
+    color: white
+    margin-bottom: 1rem
+    @media only screen and (max-width: 1024px)
+      font-size: 34px
+    @media only screen and (max-width: 768px)
+      font-size: 32px
+    @media only screen and (max-width: 430px)
+      font-size: 26px
+  .year
+    margin-top: 3.2rem
+    font-family: "Open Sans", sans-serif
+    font-weight: 400
+    color: white
+    p
+      font-size: 22px
+      &:first-child
+        font-size: 24px
+        font-weight: 800
+
+  .technologies
+    margin-top: 3.2rem
+    font-family: "Open Sans", sans-serif
+    color: white
+    p
+      font-size: 24px
+      font-weight: 800
+
+
+    ul
+      display: flex
+      flex-wrap: wrap
+      gap: 1rem
+      margin-top: 1rem
+      list-style: none
+      li
+        font-size: 22px
+        @media only screen and (max-width: 1024px)
+          font-size: 18px
+
+
+  .desc
+    margin-top: 3.2rem
+    font-family: "Open Sans", sans-serif
+    font-weight: 400
+
+    color: white
+    p
+      font-size: 20px
+      &:first-child
+        font-size: 24px
+        font-weight: 800
+
+  .myRole
+    margin-top: 3.2rem
+    font-family: "Open Sans", sans-serif
+    font-weight: 400
+
+    color: white
+    p
+      font-size: 20px
+      &:first-child
+        font-size: 24px
+        font-weight: 800
+    ul
+      display: flex
+      flex-direction: column
+      margin-top: 1rem
+      margin-left: 2rem
+      li
+        font-size: 20px
+  .images
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    gap: 4rem
+    margin-top: 3.2rem
+    .image
+      width: 60rem
+      img
+        width: 100%
+        height: 100%
+        object-fit: contain
+
